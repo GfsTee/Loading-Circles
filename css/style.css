@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    animation: 4s circle infinite ease-in-out;
+    position: absolute;
+}
+div:nth-of-type(2) {
+    animation-delay: 1s;
+}
+div:nth-of-type(3) {
+    animation-delay: 2s;
+}
+div:nth-of-type(4) {
+    animation-delay: 3s;
+}
+
+@keyframes circle {
+    0%, 100% {
+        transform: translate(0, 0); 
+        background-color: red;
+    }
+    25% {
+        transform: translate(calc(100vw - 200px), 0); 
+        background-color: yellow; 
+        
+    }
+    50% {transform: translate(calc(100vw - 200px), calc(100vh - 200px));
+        background-color: lime; 
+        
+    }
+    75% {transform: translate(0px, calc(100vh - 200px)); 
+        background-color: blue; 
+        
+    }
+}
+.in {
+    top: 200px;
+    left: 200px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation: 2s circle2 ease-in-out infinite;
+    position: absolute;
+}
+.in2 {
+    top: 200px;
+    left: 200px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation: 2s circle2 ease-in-out infinite;
+    position: absolute;
+    animation-delay: .5s;
+}
+.in3 {
+    top: 200px;
+    left: 200px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation: 2s circle2 ease-in-out infinite;
+    position: absolute;
+    animation-delay: 1s;
+}
+.in4 {
+    top: 200px;
+    left: 200px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation: 2s circle2 ease-in-out infinite;
+    position: absolute;
+    animation-delay: 1.5s;
+}
+@keyframes circle2 {
+    0%, 100% {
+        transform: translate(0, 0); 
+        background-color: red;
+    }
+    25% {
+        transform: translate(calc(100vw - 450px), 0px); 
+        background-color: yellow; 
+        
+    }
+    50% {transform: translate(calc(100vw - 450px), calc(100vh - 450px));
+        background-color: lime; 
+        
+    }
+    75% {transform: translate(0px, calc(100vh - 450px)); 
+        background-color: blue; 
+        
+    }
+}
